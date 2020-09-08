@@ -1,0 +1,68 @@
+{
+  "name": "cra-template-bfx",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "shaojiang <shaojiang.cai@bitfinex.com",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "template.json",
+  "description": "A Create React App template for Bitfinex standalone SPA",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "eslint",
+    "redux",
+    "react-redux",
+    "react-router",
+    "react-router-dom",
+    "prettier"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "lodash": "^4.17.20",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/.eslintrc",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .eslintrc template/",
+    "prepublishOnly": "npm run clean-files && npm run copy-files"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agongdai/cra-template-bfx-demo",
+    "directory": "/"
+  },
+  "bugs": {
+    "url": "https://github.com/agongdai/cra-template-bfx-demo/issues"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
